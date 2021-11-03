@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Css reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  
+  <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+  <!-- Include  style.css here -->
+    <link rel="stylesheet" href="style.css" />
+  
+    <script src="https://d3js.org/d3.v7.min.js" ></script>
+  <!-- include the JS file -->
+    <script defer src = "main.js" type = 'module'></script>
+  
+  </head>
+  
+  <body>
+    <div class = "container">
+      <h1>Covid Death Rates and Vaccinations</h1>
+      <!-- center a drop down menu here-->
+      
+      <!--Below will be the first row where the visualizations will go-->
+      <div class = "row">
+        <select id = 'group-by'>
+          <option value = "national">National</option>
+          <option value = "Ma">Massachusetts</option>
+          <option value = "Miss">Mississippi</option>
+        </select>
+      </div>
+      <div class = 'row'>
+        <div class = "column">
+          <!---This one is going to be the national covid vax rate graph: bar w/line-->
+          <p>TEST GRAPH 1</p>
+          <div class = "left-chart"></div>
+        </div>
+        <div class = "column">
+          <!---This one is the line chart for national death rates--->
+          <p>TEST GRAPH 2</p>
+          <div class = "right-chart"></div>
+        </div>
+      </div>
+      <!--this row below will be for the 2 charts we will have-->
+      <!----These are the 2 graphs that will update based on what state is selected-->
+      <div class = "row">
+        <div class = "column">
+          <p>TEST GRAPH BOTTOM LEFT</p>
+          <div class = "bottom-left-chart"></div>
+        </div>
+        <div class = "column">
+          <p>TEST GRAPH BOTTOM RIGHT</p>
+          <div class = "bottom-right-chart"></div>
+        </div>
+      </div>
+      
+      
+    
+    </div> <!--closing div for container-->
+  </body>
